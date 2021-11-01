@@ -42,4 +42,13 @@ public class TestListCity {
         list.deleteCity(newCity);
         assertEquals(list.getCount(), listSize -1);
     }
+
+    @Test
+    public void countCitiesTest() {
+        createList();
+        list.addCity(new City("Edmonton", "AB"));
+        list.addCity(new City("Halifax", "NS"));
+        int listSize = list.getCount();
+        assertEquals(listSize, list.countCities());
+    }
 }
