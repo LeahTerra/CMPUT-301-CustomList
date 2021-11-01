@@ -29,6 +29,7 @@ public class TestListCity {
     @Test
     public void hasCityTest() {
         createList();
+        list.addCity(new City("Edmonton", "AB"));
         assertTrue(list.hasCity("Edmonton"));
     }
 }
