@@ -33,7 +33,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(String city) {
-
+        for(int i=0;i<cities.size();i++){
+            if (cities.get(i).getCityName() == city) {
+                return true;
+            }
+        }
         return false;
     }
 
